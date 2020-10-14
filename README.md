@@ -8,6 +8,9 @@ Aplikasi ini berfungsi untuk menghitung nilai tukar mata uang dari dollar ke rup
 ## How does it works?
 Pertama program akan mengeksekusi terlebih dahulu ,method dibawah ini:
 
+
+
+'''
       
       public MainWindow()
         {
@@ -16,9 +19,11 @@ Pertama program akan mengeksekusi terlebih dahulu ,method dibawah ini:
             
         }
 
-
+'''
 
 Lalu pada private void Button_Hitung_Clik terdapat logic untuk menangani human error berupa kesalahan input.ketika user menginput angka maka terdapat info "INVALID".
+
+'''
 
     private void Button_Hitung_Click(object sender, RoutedEventArgs e)
         {
@@ -32,14 +37,16 @@ Lalu pada private void Button_Hitung_Clik terdapat logic untuk menangani human e
             resultLabel.Content = result;
       
         }
+'''
+'''   
 
-
-Untuk logika perhitungannya terdapat pada class CurrencyContrroller.s
-
- public string usdToIdr(string nominal)
+ 
+     
+     public string usdToIdr(string nominal)
         {
             var nominalDouble = Convert.ToDouble(nominal);
             var result = nominalDouble * 15000;
             return Convert.ToString(result);
+      
         }
-        
+'''
