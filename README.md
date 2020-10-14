@@ -42,8 +42,4 @@ Untuk logika perhitungannya terdapat pada class CurrencyContrroller.s
             var result = nominalDouble * 15000;
             return Convert.ToString(result);
         }
-        public Boolean isAllowed(string nominal)
-        {
-            Regex regex = new Regex("[^0-9.-]+");
-            return !regex.IsMatch(nominal);
-        }
+        
